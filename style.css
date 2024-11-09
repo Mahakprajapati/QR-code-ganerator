@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(white,black);
+}
+.container{
+    
+    background-image: linear-gradient(black,white);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    padding: 0.7rem;
+    border-radius: 4px;
+
+}
+input{
+    margin-top: 1rem;
+    width: 100%;
+    outline: 0;
+    border: 1px solid black;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.error{
+    border: 2px solid red;
+}
+#image{
+    display: flex;
+    width: 100%;
+}
+
+.imgBox{
+    width: 200px;
+    margin: auto;
+    max-height:0;
+    overflow: hidden;
+    transition:max-height 2s  linear;
+}
+.showImage{
+    max-height:300px;
+    margin-block: 1rem;
+
+}
+
+button{
+    background-color: rgb(163, 93, 228);
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.4rem;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    margin-top: 1rem;
+}
+p{
+    text-align: center;
+    margin-block: 0.5rem;
+    font-weight: 700;
+    color: blue;
+}
+
+
+.shake{
+    animation:shake 0.1s linear 10;
+}
+
+@keyframes shake{
+     0%{
+        transform:translateX(0);
+     }25%{
+        transform: translateX(-3px);
+     }40%{
+        transform: translateX(0);
+     }55%{
+        transform: translateX(3px);
+     }65%{
+        transform: translateX(0);
+     }75%{
+        transform: translateX(-3px);
+     }85%{
+        transform: translateX(0);
+     }100%{
+        transform: translateX(3px);
+     }
+}
